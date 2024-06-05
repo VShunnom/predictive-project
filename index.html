@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victor Shunnom's Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/data-logo.png" class="logo" alt="Logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
+                </ul>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+
+            </nav>
+
+
+            <div class="header-text">
+                <h1>Hi there! I'm <span>Victor S. Stephen</span></h1>
+                <p>Welcome to my Portfolio!</p>
+                <p style="margin-top: 20px;">
+                    Explore my projects that demonstrate my expertise in Data analytics, Business Analytics, Process
+                    Improvement and Business
+                    Intelligence. Each project highlights my commitment to leveraging data to uncover insights, inform
+                    business decisions, and foster innovation.
+                </p>
+                <div id="moreContent" style="display: none; margin: 20px 0;">
+                    <p>
+                        This portfolio highlights my expertise in creating interpretable machine learning models and
+                        algorithms for analyzing complex data. I integrate principles from mathematical statistics and
+                        numerical optimization to develop these models. My projects encompass diverse data types,
+                        including biomedical images used for heart disease health research, e-commerce text data for
+                        analyzing consumer purchasing behavior, and edu-data for evaluating marketing efforts aimed at
+                        potential student conversion. Through these projects, I have demonstrated my ability to apply
+                        advanced analytical techniques to solve real-world problems across different domains.
+                    </p>
+                </div>
+                <a href="javascript:void(0);"
+                    onclick="document.getElementById('moreContent').style.display='block';this.style.display='none';"
+                    style="color: #ff004f; margin: 20px 0;">
+                    More
+                </a>
+
+                <!-- -----------about---------- -->
+                <div id="about">
+                    <!-- Your other content goes here -->
+                </div>
+
+                <!-- Additional CSS to ensure no overlapping -->
+                <style>
+                    #moreContent {
+                        overflow: hidden;
+                        clear: both;
+                    }
+                </style>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="about-col-1">
+                            <img src="images/profile.jpg">
+                        </div>
+                        <div class="about-col-2">
+                            <h1 class="sub-title">About Me</h1>
+                            <p>A dynamic Data Analyst with a keen eye for detail and a results-driven approach.
+                                Possessing a solid foundation in statistical methods and data analytics, I excel in
+                                collecting, analyzing, and interpreting complex datasets to drive strategic business
+                                decisions. Proficient in data visualization and reporting tools, I have a proven track
+                                record of delivering actionable insights. I bring strong communication and collaboration
+                                skills, honed through successful teamwork on projects involving machine learning,
+                                regression, text mining, marketing strategy, and process optimization.
+                            </p>
+
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                                <p class="tab-links" onclick="opentab('language')">Language</p>
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>Machine Learning</span><br>Building predictive models</li>
+                                    <li><span>Statistical Analysis</span><br>Analyzing data for insights</li>
+                                    <li><span>Data Cleaning</span><br>Preprocessing and refining raw data</li>
+                                    <li><span>Data Visualization</span><br>Creating meaningful visual representations
+                                    </li>
+                                    <li><span>Business Process Improvement</span><br>Enhancing business process and
+                                        service delivery</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li><span>August 2023 - Current</span><br>Machine Learning Engineer Lead at American
+                                        University (American Statistical Association), Washington, DC</li>
+                                    <li><span>June 2021 – June 2023</span><br>Statistical Consultant at Ramsys Infotech
+                                        Solution Ltd, Accra, Ghana</li>
+                                    <li><span>October 2020 – May 2021</span><br>Data Manager Intern at Institute for
+                                        Environment and Sanitation Studies, Accra, Ghana</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>2024</span><br>AWS Certified Cloud Practitioner Certification</li>
+                                    <li><span>2022 - 2024</span><br>Master of Science in Analytics<br>American
+                                        University, Washington, DC</li>
+                                    <li><span>2010 - 2015</span><br>Master of Business Administration: Management
+                                        Engineering<br>Ahmadu Bello University, Zaria, Nigeria</li>
+                                    <li><span>2000 - 2006</span><br>Bachelor of Engineering: Mechanical
+                                        Engineering<br>Ahmadu Bello University, Zaria, Nigeria</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="language">
+                                <ul>
+                                    <li>R</li>
+                                    <li>Python</li>
+                                    <li>SQL</li>
+                                    <li>Tableau</li>
+                                </ul>
+                            </div>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ----------portfolio------------ -->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/Heart-Attack.jpg">
+                        <div class="layer">
+                            <h3>PREDICTING THE LIKELIHOOD OF A HEART ATTACK</h3>
+                            <p>Fine Tuning Hyperparameter with decision Trees</p>
+                            <a href="https://brightamenyo.github.io/Heart_Disease-/"><i
+                                    class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/textmining.png">
+                        <div class="layer">
+                            <h3>Exploring the Landscape of Customer Satisfaction and Product Perceptions in Online
+                                Retail.</h3>
+                            <a href="https://github.com/BrightAmenyo/Red-Wine-Quality_pred/blob/main/wine_code.ipynb"><i
+                                    class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/edu-Marketing.jpg">
+                        <div class="layer">
+                            <h3>Online Marketing Strategy Analysis- American University</h3>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+
+        <!-- ----------contact------------- -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fas fa-paper-plane"></i> ndonah2@yahoo.com</p>
+                        <p><i class="fas fa-phone-square-alt"></i> +1(240) 945 9715</p>
+                        <div class="social-icons">
+                            <a href="https://github.com/Vshunnom"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/victorshunnomstephen/"><img
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/600px-LinkedIn_logo_initials.png"
+                                    alt="LinkedIn Logo" style="width: 32px; height: 32px;"></a>
+                            <p>Every dataset tells a story. I transform raw data into actionable insights that drive
+                                impactful business decisions, improving the bottom line. If it can be measured, it can
+                                be optimized.</p>
+                            <p>Thank you for visiting my portfolio.</p>
+                            <p class="hashtags">#DataAnalytics #BusinessIntelligence
+                            <div id="BusinessProcessAnalysis"></div>
+                            </p>
+                        </div>
+                        <a href="Victor-Resume_DS.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © Shunnom. Made wtih <i class="fas fa-heart"></i> by <a
+                        href="https://www.linkedin.com/in/victorshunnomstephen/">Website</a></p>
+            </div>
+        </div>
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname) {
+                for (tablink of tablinks) {
+                    tablink.classList.remove("active-link");
+                }
+                for (tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+
+        <script>
+            var sidemeu = document.getElementById("sidemenu");
+
+            function openmenu() {
+                sidemeu.style.right = "0";
+            }
+            function closemenu() {
+                sidemeu.style.right = "-200px";
+            }
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwELSAX96jeREqXrW5b5liDTaDL0AJ5M90DhW958JTGSQcqnNrXDMAu8XGhiyxlADYPng/exec';
+            const form = document.forms['submit-to-google-sheet'];
+            const msg = document.getElementById('msg');
+
+            form.addEventListener('submit', e => {
+                e.preventDefault();
+                fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                    .then(response => response.json())
+                    .then(response => {
+                        msg.innerHTML = "Message sent successfully!";
+                        form.reset();
+                    })
+                    .catch(error => {
+                        msg.innerHTML = "Error sending message!";
+                    });
+            });
+        </script>
+
+</body>
+
+</html>
